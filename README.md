@@ -1,2 +1,2 @@
 # CS615Internet
-This repository is for creating and praticing interactivr web pages in html,css..etc
+This repository is for creating and praticing interactive web pages in html,css..etc
