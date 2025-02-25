@@ -1,0 +1,281 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.header {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;  /* Maintains aspect ratio */
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: #6ab446;
+}
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.description button {
+    border:1px solid #6ab446;
+    background:#6ab446;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+	border:1px solid #fff;
+    background:#fff;
+    color:#000;
+}
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #fff;
+    margin-top: 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+/* Background Styling */
+.background {
+    background: #f4f3ef; /* Softer and more elegant shade */
+    padding: 4em 0;
+}
+
+/* Team Section Styling */
+.team {
+    color: #444; /* Slightly darker for better contrast */
+    padding: 0 100px; /* Reduced padding for better mobile view */
+}
+
+/* Card Columns - Responsive Grid */
+.team .card-columns {
+    -webkit-column-count: 3; /* Adjusted for better layout */
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
+
+/* Flower Cards */
+.team .card {
+    background: rgba(255, 255, 255, 0.1); /* Elegant translucent effect */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px; /* Rounded corners for a premium look */
+    padding: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Elegant Feel */
+.team .card:hover {
+    transform: translateY(-5px); /* Soft lift effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Elegant subtle shadow */
+}
+
+/* Card Title */
+.team .card-title {
+    font-size: 1.5rem; /* Slightly larger for emphasis */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d4a373; /* Classy warm gold color */
+}
+
+/* Card Text */
+.team .card-text {
+    font-size: 1rem;
+    color: #666; /* Softer gray for readability */
+    margin-top: 5px;
+}
+
+/* Make Cards More Responsive */
+@media (max-width: 992px) {
+    .team {
+        padding: 0 50px; /* Reduce padding for smaller screens */
+    }
+    .team .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .team .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1; /* Single column for mobile */
+    }
+}
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+ 
+    .description h1 {
+        font-size: 2em;
+    }
+ 
+    .description p {
+        font-size: 1.2rem;
+    }
+ 
+    .features {
+        margin: 0;
+    }
+}
+
+/* Ensure the header section is perfectly centered */
+.about-page .page-header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+    height: 45vh; /* Adjust height for better fit */
+    background: url("images/flowers-bg.jpg") center/cover no-repeat;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Make sure the welcome text is centered properly */
+.about-page .description {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+}
+
+/* Center and balance the title */
+.about-page .description h1 {
+    font-size: 2.8rem; /* Adjust font size */
+    font-weight: bold;
+    text-align: center; /* Ensure text is centered */
+    line-height: 1.3; /* Improve readability */
+    width: 100%;
+}
+
+/* Improve paragraph alignment */
+.about-page .description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Fix button alignment */
+.about-page .btn-lg {
+    display: block;
+    width: fit-content;
+    margin: 15px auto; /* Centers button */
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Reduce extra space below header */
+.about-page .container {
+    margin-top: -30px; /* Pulls Our Story closer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Balance spacing for "Our Story" section */
+.about-page h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Reduce top margin */
+    margin-bottom: 15px; /* Reduce bottom margin */
+}
